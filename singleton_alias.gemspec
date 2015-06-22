@@ -15,11 +15,12 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/berfarah/singleton_alias'
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
-    f.match(%r{^(test|spec|features)/})
+    f.match(%r{^spec/})
   end
-  spec.require_paths = ['lib']
+  spec.license       = 'MIT'
+  spec.require_path  = 'lib'
 
   spec.add_development_dependency 'bundler', '~> 1.9'
   spec.add_development_dependency 'rake', '~> 10.0'
-  spec.add_development_dependency 'rspec'
+  spec.add_development_dependency 'rspec', '~> 3'
 end
